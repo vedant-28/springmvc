@@ -10,5 +10,9 @@
 		<h1>Home page</h1>
 		<h3>Called by home controller</h3>
 		<h3>URL mapping: /home</h3>
+		<%
+			String name = (String) request.getAttribute("name");
+		%>
+		<h3>Name is: <%=name %></h3>
 	</body>
 </html>
