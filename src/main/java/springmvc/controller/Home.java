@@ -1,5 +1,8 @@
 package springmvc.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +26,13 @@ public class Home {
 	@RequestMapping("/help")
 	public ModelAndView help() {
 		ModelAndView modelAndView = new ModelAndView();
+		List<Integer> marks = new ArrayList<>();
+		marks.add(100);
+		marks.add(76);
+		marks.add(69);
+		
 		modelAndView.addObject("Id", "1001");
+		modelAndView.addObject("marks", marks);
 		modelAndView.setViewName("help");
 		
 		return modelAndView;
