@@ -19,7 +19,7 @@
     	<form action="processform" method="post">
    			<div class="form-group">
     			<label for="exampleInputEmail1">Name</label>
-    			<input type="text" name="name" class="form-control" id="nameinput" placeholder="Enter here...">
+    			<input type="text" name="userName" class="form-control" id="nameinput" placeholder="Enter here...">
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Email address</label>
