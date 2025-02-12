@@ -27,7 +27,7 @@
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Password</label>
-    			<input type="password" name="passwd" class="form-control" id="passwdinput" placeholder="Enter here...">
+    			<input type="password" name="password" class="form-control" id="passwdinput" placeholder="Enter here...">
   			</div>
   			<div class="container text-center">
   				<button type="submit" class="btn btn-success">Sign up</button>
