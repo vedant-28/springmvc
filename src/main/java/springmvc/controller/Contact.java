@@ -45,6 +45,13 @@ public class Contact {
 	@RequestMapping(path = "/processform", method = RequestMethod.POST)
 	public String handleForm(@ModelAttribute User user, Model model) {
 		System.out.println(user);
+		
+		// Example for practical usage of redirect in spring MVC:
+		// [if username is blank, then it'll be redirected to form again.]
+		if(user.getUserName().isBlank()) {
+			return "redirect:/contact";
+		}
+		
 		this.userService.createUser(user);
 		
 		return "success";
